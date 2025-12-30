@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticia moyobamba- Alerta: Niño Desaparecido en Moyobamba</title>
+    <title>Noticia San Martin - Alerta: Niño Desaparecido en Moyobamba</title>
     <style>
         * {
             margin: 0;
@@ -106,6 +106,44 @@
             color: white;
         }
 
+        .whatsapp-section {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 40px;
+            color: white;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            color: #25D366;
+            padding: 18px 40px;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .whatsapp-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            background-color: #f0f0f0;
+        }
+
         .cta-section h2 {
             font-size: 1.8em;
             margin-bottom: 20px;
@@ -145,6 +183,78 @@
             margin-bottom: 10px;
         }
 
+        .image-container {
+            position: relative;
+            margin: 30px 0;
+            border: 8px solid;
+            border-image: linear-gradient(45deg, #ff0000, #ffff00, #ff0000, #ffff00) 1;
+            animation: borderPulse 2s infinite;
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+        }
+
+        @keyframes borderPulse {
+            0%, 100% {
+                border-image: linear-gradient(45deg, #ff0000, #ffff00, #ff0000, #ffff00) 1;
+            }
+            50% {
+                border-image: linear-gradient(45deg, #ffff00, #ff0000, #ffff00, #ff0000) 1;
+            }
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .overlay-text {
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .overlay-text h2 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            color: #ffff00;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .overlay-text p {
+            font-size: 1.5em;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .overlay-text .urgent {
+            background-color: rgba(255, 0, 0, 0.8);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.3em;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
         footer {
             background-color: #2c3e50;
             color: white;
@@ -170,6 +280,32 @@
                 padding: 15px 30px;
                 font-size: 1.1em;
             }
+
+            .whatsapp-button {
+                padding: 15px 30px;
+                font-size: 1.1em;
+            }
+
+            .whatsapp-button svg {
+                width: 24px;
+                height: 24px;
+            }
+
+            .overlay-text h2 {
+                font-size: 2em;
+            }
+
+            .overlay-text p {
+                font-size: 1.1em;
+            }
+
+            .overlay-text .urgent {
+                font-size: 1em;
+            }
+
+            .image-container {
+                border-width: 5px;
+            }
         }
     </style>
 </head>
@@ -194,12 +330,28 @@
                 <strong>Estado:</strong> Caso Activo - Se solicita colaboración ciudadana
             </div>
 
+            <div class="image-container">
+                <img src="https://via.placeholder.com/800x500/cccccc/666666?text=FOTO+DEL+MENOR+DESAPARECIDO" alt="Niño desaparecido en Moyobamba">
+                <div class="image-overlay">
+                    <div class="overlay-text">
+                        <h2>⚠️ SE BUSCA ⚠️</h2>
+                        <p>Niño desaparecido en Moyobamba</p>
+                        <p class="urgent">URGENTE - Colabora con la búsqueda</p>
+                    </div>
+                </div>
+            </div>
+
             <div class="content-text">
                 <p>Las autoridades y familiares solicitan la colaboración de la comunidad en la búsqueda de un menor desaparecido en la ciudad de Moyobamba. Se trata de un caso que requiere la atención inmediata de todos los ciudadanos.</p>
                 
                 <p>La familia hace un llamado urgente a la población para que cualquier persona que tenga información sobre el paradero del menor se comunique inmediatamente con las autoridades locales.</p>
             </div>
-            
+
+            <div class="info-box">
+                <h3>⚠️ Información Importante</h3>
+                <p>Si tiene cualquier información que pueda ayudar en la búsqueda, por favor comuníquese inmediatamente con la Policía Nacional del Perú o con las autoridades locales de Moyobamba. Cada minuto cuenta en estos casos.</p>
+            </div>
+
             <div class="whatsapp-section">
                 <h2>📱 Únete al Grupo de WhatsApp</h2>
                 <p style="margin-bottom: 25px; font-size: 1.1em;">Únete al grupo de apoyo y recibe actualizaciones en tiempo real</p>
@@ -211,15 +363,10 @@
                 </a>
             </div>
 
-            <div class="info-box">
-                <h3>⚠️ Información Importante</h3>
-                <p>Si tiene cualquier información que pueda ayudar en la búsqueda, por favor comuníquese inmediatamente con la Policía Nacional del Perú o con las autoridades locales de Moyobamba. Cada minuto cuenta en estos casos.</p>
-            </div>
-
             <div class="cta-section">
                 <h2>📺 Transmisión en Vivo</h2>
                 <p style="margin-bottom: 25px; font-size: 1.1em;">Sigue la cobertura completa y las últimas actualizaciones sobre este caso</p>
-                <a href="https://www.facebook.com/share/v/1H4aeZNgTr/" target="_blank" class="cta-button">
+                <a href="https://www.facebook.com/share/v/19RSxGwAHg/" target="_blank" class="cta-button">
                     ▶ Click para Ver el Envío
                 </a>
             </div>
@@ -227,7 +374,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Noticia San Martin. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Noticia San martin. Todos los derechos reservados.</p>
         <p style="margin-top: 10px; font-size: 0.9em;">Comprometidos con la información veraz y el bienestar de nuestra comunidad</p>
     </footer>
 </body>
