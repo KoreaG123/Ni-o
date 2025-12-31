@@ -1,381 +1,294 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticia San Martin - Alerta: Niño Desaparecido en Moyobamba</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
+<title>🚨 Alerta Urgente | Niño Desaparecido en Moyobamba</title>
 
-        header {
-            background: linear-gradient(135deg, #c41e3a 0%, #8b0000 100%);
-            color: white;
-            padding: 20px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        }
+<!-- ✅ OPTIMIZACIÓN WHATSAPP Y FACEBOOK -->
+<meta property="og:title" content="🚨 SE BUSCA NIÑO DESAPARECIDO - MOYOBAMBA">
+<meta property="og:description" content="Niño desaparecido en Moyobamba. Cualquier información es vital. Llama de inmediato a la Policía Nacional.">
+<meta property="og:image" content="https://koreag123.github.io/Ni-o/img/afiche.jpg">
+<meta property="og:url" content="https://koreag123.github.io/Ni-o/">
+<meta property="og:type" content="website">
 
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="🚨 SE BUSCA NIÑO DESAPARECIDO - MOYOBAMBA">
+<meta name="twitter:description" content="Niño desaparecido en Moyobamba. Cualquier información es vital.">
+<meta name="twitter:image" content="https://koreag123.github.io/Ni-o/img/afiche.jpg">
 
-        .logo {
-            font-size: 2.5em;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 5px;
-        }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        .tagline {
-            font-size: 0.9em;
-            opacity: 0.9;
-        }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f2f2f2;
+  line-height: 1.6;
+}
 
-        .alert-banner {
-            background-color: #ff6b6b;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-weight: bold;
-            font-size: 1.1em;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            animation: pulse 2s infinite;
-        }
+.alert-top {
+  background: #8b0000;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1.1em;
+  animation: pulse 2s infinite;
+}
 
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.8; }
-        }
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+}
 
-        .container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
 
-        .main-content {
-            background: white;
-            border-radius: 10px;
-            padding: 40px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-        }
+.afiche {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
 
-        h1 {
-            color: #c41e3a;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            border-bottom: 4px solid #c41e3a;
-            padding-bottom: 15px;
-        }
+.afiche-text {
+  flex: 1;
+}
 
-        .meta-info {
-            color: #666;
-            font-size: 0.9em;
-            margin-bottom: 30px;
-            padding: 15px;
-            background-color: #f9f9f9;
-            border-left: 4px solid #c41e3a;
-        }
+.afiche-text h1 {
+  color: #8b0000;
+  margin-bottom: 10px;
+  font-size: 2.2em;
+}
 
-        .content-text {
-            font-size: 1.1em;
-            margin-bottom: 30px;
-            text-align: justify;
-        }
+.afiche-text h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
 
-        .cta-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 40px;
-            border-radius: 10px;
-            text-align: center;
-            margin-top: 40px;
-            color: white;
-        }
+.afiche-text p {
+  margin-bottom: 10px;
+  font-size: 1.05em;
+  color: #444;
+}
 
-        .whatsapp-section {
-            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-            padding: 40px;
-            border-radius: 10px;
-            text-align: center;
-            margin-top: 40px;
-            color: white;
-            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
-        }
+.afiche-text ul {
+  margin: 15px 0 20px 20px;
+  list-style: none;
+}
 
-        .whatsapp-section h2 {
-            font-size: 1.8em;
-            margin-bottom: 20px;
-        }
+.afiche-text li {
+  margin-bottom: 8px;
+  font-size: 1.1em;
+  padding-left: 5px;
+}
 
-        .whatsapp-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #fff;
-            color: #25D366;
-            padding: 18px 40px;
-            font-size: 1.3em;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+.afiche-img {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
 
-        .whatsapp-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-            background-color: #f0f0f0;
-        }
+.afiche-img img {
+  width: 100%;
+  border-radius: 10px;
+  border: 5px solid #8b0000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
 
-        .cta-section h2 {
-            font-size: 1.8em;
-            margin-bottom: 20px;
-        }
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
 
-        .cta-button {
-            display: inline-block;
-            background-color: #fff;
-            color: #667eea;
-            padding: 18px 50px;
-            font-size: 1.3em;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+.btn {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
 
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-            background-color: #f0f0f0;
-        }
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
 
-        .info-box {
-            background-color: #fff3cd;
-            border-left: 5px solid #ffc107;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 5px;
-        }
+.btn-call {
+  background: #d32f2f;
+  color: #fff;
+}
 
-        .info-box h3 {
-            color: #856404;
-            margin-bottom: 10px;
-        }
+.btn-call:hover {
+  background: #b71c1c;
+}
 
-        .image-container {
-            position: relative;
-            margin: 30px 0;
-            border: 8px solid;
-            border-image: linear-gradient(45deg, #ff0000, #ffff00, #ff0000, #ffff00) 1;
-            animation: borderPulse 2s infinite;
-            box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
-        }
+.btn-wsp {
+  background: #25D366;
+  color: #fff;
+}
 
-        @keyframes borderPulse {
-            0%, 100% {
-                border-image: linear-gradient(45deg, #ff0000, #ffff00, #ff0000, #ffff00) 1;
-            }
-            50% {
-                border-image: linear-gradient(45deg, #ffff00, #ff0000, #ffff00, #ff0000) 1;
-            }
-        }
+.btn-wsp:hover {
+  background: #128C7E;
+}
 
-        .image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+.btn-fb {
+  background: #1877f2;
+  color: #fff;
+}
 
-        .image-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            padding: 30px;
-        }
+.btn-fb:hover {
+  background: #0d62d8;
+}
 
-        .overlay-text {
-            text-align: center;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-        }
+.info-box {
+  background: #fff3cd;
+  border-left: 5px solid #ffc107;
+  padding: 20px;
+  margin: 20px 30px;
+  border-radius: 5px;
+}
 
-        .overlay-text h2 {
-            font-size: 3em;
-            margin-bottom: 15px;
-            color: #ffff00;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            animation: blink 1.5s infinite;
-        }
+.info-box h3 {
+  color: #856404;
+  margin-bottom: 10px;
+}
 
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
-        }
+.info-box p {
+  color: #856404;
+  margin: 0;
+}
 
-        .overlay-text p {
-            font-size: 1.5em;
-            margin: 10px 0;
-            font-weight: bold;
-        }
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 0.95em;
+}
 
-        .overlay-text .urgent {
-            background-color: rgba(255, 0, 0, 0.8);
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 1.3em;
-            margin-top: 20px;
-            display: inline-block;
-        }
+footer p {
+  margin: 5px 0;
+}
 
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 60px;
-        }
-
-        @media (max-width: 768px) {
-            .main-content {
-                padding: 20px;
-            }
-
-            h1 {
-                font-size: 1.8em;
-            }
-
-            .logo {
-                font-size: 1.8em;
-            }
-
-            .cta-button {
-                padding: 15px 30px;
-                font-size: 1.1em;
-            }
-
-            .whatsapp-button {
-                padding: 15px 30px;
-                font-size: 1.1em;
-            }
-
-            .whatsapp-button svg {
-                width: 24px;
-                height: 24px;
-            }
-
-            .overlay-text h2 {
-                font-size: 2em;
-            }
-
-            .overlay-text p {
-                font-size: 1.1em;
-            }
-
-            .overlay-text .urgent {
-                font-size: 1em;
-            }
-
-            .image-container {
-                border-width: 5px;
-            }
-        }
-    </style>
+@media (max-width: 768px) {
+  .afiche {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .afiche-text h1 {
+    font-size: 1.8em;
+  }
+  
+  .afiche-text h2 {
+    font-size: 1.3em;
+  }
+  
+  .buttons {
+    flex-direction: column;
+  }
+  
+  .btn {
+    min-width: 100%;
+  }
+  
+  .info-box {
+    margin: 20px 15px;
+  }
+}
+</style>
 </head>
+
 <body>
-    <header>
-        <div class="header-content">
-            <div class="logo">Noticia San Martin</div>
-            <div class="tagline">Información veraz y oportuna</div>
-        </div>
-    </header>
 
-    <div class="alert-banner">
-        🚨 ALERTA - CASO URGENTE - COLABORA CON LA BÚSQUEDA 🚨
+<div class="alert-top">
+🚨 ALERTA URGENTE – AYÚDANOS A ENCONTRARLO 🚨
+</div>
+
+<div class="container">
+
+  <div class="afiche">
+
+    <div class="afiche-text">
+      <h1>BRYDEN YAMAN</h1>
+      <h2>Ramírez Córdova (2 años)</h2>
+
+      <p>
+        Se encuentra desaparecido desde el <strong>21 de diciembre de 2024</strong> en la ciudad de
+        <strong>Moyobamba – San Martín, Perú</strong>.
+      </p>
+
+      <p>
+        Cada información, por pequeña que parezca, puede marcar la diferencia para que
+        Bryden regrese sano y salvo a casa.
+      </p>
+
+      <ul>
+        <li>📏 <strong>Estatura:</strong> 93 cm</li>
+        <li>👁 <strong>Ojos y cabello:</strong> negro</li>
+        <li>🧍 <strong>Contextura:</strong> delgada</li>
+        <li>👕 <strong>Última vestimenta:</strong> (Agregar si se conoce)</li>
+      </ul>
+
+      <div class="buttons">
+        <!-- 📞 LLAMADA DIRECTA -->
+        <a href="tel:114" class="btn btn-call">📞 LLAMAR A LA POLICÍA (114)</a>
+
+        <!-- WHATSAPP -->
+        <a href="https://chat.whatsapp.com/KlN0yOJ28jJ1Wz0XuSDQJq" target="_blank" class="btn btn-wsp" rel="noopener noreferrer">
+          💬 Grupo WhatsApp de Apoyo
+        </a>
+
+        <!-- FACEBOOK -->
+        <a href="https://www.facebook.com/share/v/19RSxGwAHg/" target="_blank" class="btn btn-fb" rel="noopener noreferrer">
+          ▶ Ver en Facebook
+        </a>
+      </div>
     </div>
 
-    <div class="container">
-        <div class="main-content">
-            <h1>Niño Desaparecido en Moyobamba</h1>
-            
-            <div class="meta-info">
-                <strong>Ubicación:</strong> Moyobamba, San Martín, Perú<br>
-                <strong>Estado:</strong> Caso Activo - Se solicita colaboración ciudadana
-            </div>
-
-            <div class="image-container">
-                <img src="https://via.placeholder.com/800x500/cccccc/666666?text=FOTO+DEL+MENOR+DESAPARECIDO" alt="Niño desaparecido en Moyobamba">
-                <div class="image-overlay">
-                    <div class="overlay-text">
-                        <h2>⚠️ SE BUSCA ⚠️</h2>
-                        <p>Niño desaparecido en Moyobamba</p>
-                        <p class="urgent">URGENTE - Colabora con la búsqueda</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content-text">
-                <p>Las autoridades y familiares solicitan la colaboración de la comunidad en la búsqueda de un menor desaparecido en la ciudad de Moyobamba. Se trata de un caso que requiere la atención inmediata de todos los ciudadanos.</p>
-                
-                <p>La familia hace un llamado urgente a la población para que cualquier persona que tenga información sobre el paradero del menor se comunique inmediatamente con las autoridades locales.</p>
-            </div>
-
-            <div class="info-box">
-                <h3>⚠️ Información Importante</h3>
-                <p>Si tiene cualquier información que pueda ayudar en la búsqueda, por favor comuníquese inmediatamente con la Policía Nacional del Perú o con las autoridades locales de Moyobamba. Cada minuto cuenta en estos casos.</p>
-            </div>
-
-            <div class="whatsapp-section">
-                <h2>📱 Únete al Grupo de WhatsApp</h2>
-                <p style="margin-bottom: 25px; font-size: 1.1em;">Únete al grupo de apoyo y recibe actualizaciones en tiempo real</p>
-                <a href="https://chat.whatsapp.com/KlN0yOJ28jJ1Wz0XuSDQJq" target="_blank" class="whatsapp-button">
-                    <svg style="width: 30px; height: 30px; margin-right: 10px; vertical-align: middle;" viewBox="0 0 24 24" fill="white">
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                    </svg>
-                    Unirse al Grupo - Apoyo al Niño
-                </a>
-            </div>
-
-            <div class="cta-section">
-                <h2>📺 Transmisión en Vivo</h2>
-                <p style="margin-bottom: 25px; font-size: 1.1em;">Sigue la cobertura completa y las últimas actualizaciones sobre este caso</p>
-                <a href="https://www.facebook.com/share/v/19RSxGwAHg/" target="_blank" class="cta-button">
-                    ▶ Click para Ver el Envío
-                </a>
-            </div>
-        </div>
+    <div class="afiche-img">
+      <img src="img/afiche.jpg" alt="Bryden Yaman Ramírez Córdova - Niño desaparecido en Moyobamba">
     </div>
 
-    <footer>
-        <p>&copy; 2024 Noticia San martin. Todos los derechos reservados.</p>
-        <p style="margin-top: 10px; font-size: 0.9em;">Comprometidos con la información veraz y el bienestar de nuestra comunidad</p>
-    </footer>
+  </div>
+
+  <div class="info-box">
+    <h3>⚠️ Información Importante</h3>
+    <p>
+      Si tiene cualquier información sobre el paradero de Bryden, por favor comuníquese 
+      inmediatamente con la Policía Nacional del Perú llamando al <strong>114</strong> o 
+      con las autoridades locales de Moyobamba. <strong>Cada minuto cuenta.</strong>
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  <p><strong>Gobierno Regional de San Martín – Policía Nacional del Perú</strong></p>
+  <p>Cualquier información puede salvar una vida.</p>
+  <p style="margin-top: 15px; font-size: 0.85em; opacity: 0.8;">
+    © 2024 - Página de búsqueda y apoyo ciudadano
+  </p>
+</footer>
+
 </body>
 </html>
