@@ -30,15 +30,67 @@ body {
   background: #f2f2f2;
   line-height: 1.6;
 }
-
 .alert-top {
-  background: #8b0000;
   color: #fff;
   text-align: center;
   padding: 15px;
   font-weight: bold;
   font-size: 1.1em;
-  animation: pulse 2s infinite;
+  position: relative;
+  overflow: hidden;
+  animation: policeLights 1.5s infinite;
+}
+@keyframes policeLights {
+  0% {
+    background: #dc143c;
+    box-shadow: 0 0 20px #dc143c;
+  }
+  25% {
+    background: #8b0000;
+    box-shadow: 0 0 10px #8b0000;
+  }
+  50% {
+    background: #0047ab;
+    box-shadow: 0 0 20px #0047ab;
+  }
+  75% {
+    background: #003087;
+    box-shadow: 0 0 10px #003087;
+  }
+  100% {
+    background: #dc143c;
+    box-shadow: 0 0 20px #dc143c;
+  }
+}
+.alert-top::before,
+.alert-top::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  opacity: 0.6;
+  animation: sideLights 1.5s infinite;
+}
+
+.alert-top::before {
+  left: 0;
+  background: linear-gradient(90deg, #dc143c 0%, transparent 100%);
+}
+
+.alert-top::after {
+  right: 0;
+  background: linear-gradient(-90deg, #0047ab 0%, transparent 100%);
+  animation-delay: 0.75s;
+}
+
+@keyframes sideLights {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.2;
+  }
 }
 
 @keyframes pulse {
